@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service en Onderhoud | Exclusive Cars</title>
+    <link rel="stylesheet" href="hoofdpagina.css">
+</head>
+<style>
+/* algemene style container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+/* Diensten section styling */
+.diensten ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 0;
+    background-color: #f0f0f0;
+    font-size: 120%;
+}
+
+.diensten ul li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Service Pakketten section styling */
+.service-pakketten .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 2%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 20%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h1 {
+    margin-top: 0;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px #b7b5b5;
+}
+
+.price-btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.price-btn:hover {
+    background-color: #555;
+}
+
+.text-container {
+    margin-bottom: 2%; 
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-auround;
+    width: 80%;
+}
+
+.text-container,
+.services-container {
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+.text-container h2 {
+    font-size: 225%;
+    color: #333; /* Kleur van de titel */
+}
+
+.service {
+    flex: 1; 
+    padding: 10px; 
+    margin-right: 2%;
+    margin-bottom: 2%; 
+    margin-top: 2%;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* FAQ section styling */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+}
+</style>
+<body>
+    <!-- navigatiebalk -->
+    <div class="titel-image3">
+        <div class="navbar">
+            <ul>
+                <li><a href="ExclusiveCar.html">Home</a></li>
+                <li><a href="voorraad.html">Op voorraad</a></li>
+                <li><a href="#about">Op aanvraag</a></li>
+                <li><a class="active" href="#">Services & onderhoud</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+            </ul>
+        </div>
+        <div class="titel-text">
+          <img src="Images/Logowit.png" class="titlefoto">
+            <p>Service & onderhoud</p>
+        </div>
+    </div>
+
+<!-- Introductie Sectie -->
+    <section class="intro">
+        <div class="container">
+            <h2>Onze Service en Onderhoud</h2>
+            <p>Bij Exclusive Cars bieden we uitgebreide service- en onderhoudsdiensten om ervoor te zorgen dat uw luxe voertuig in topconditie blijft. Onze deskundige technici gebruiken de nieuwste technologie en originele onderdelen om de hoogste kwaliteit te garanderen.</p>
+        </div>
+    </section>
+
+<!-- Diensten sectie -->
+<section class="intro">
+    <div class="text-container">
+        <h2>Diensten & onderhoud</h2>
+    </div>
+    <div class="services-container">
+        <div class="service">
+            <h3>Regulier onderhoud</h3>
+            <p>We bieden periodiek onderhoud aan voor alle merken en modellen, inclusief olieverversing, filters vervangen en algemene inspectie van vitale componenten van uw auto.</p>
+        </div>
+        <div class="service">
+            <h3>Reparaties</h3>
+            <p>Onze ervaren monteurs voeren alle soorten reparaties uit, van kleine defecten tot complexe mechanische problemen. We streven naar hoogwaardige reparaties om de veiligheid en prestaties van uw auto te waarborgen.</p>
+        </div>
+        <div class="service">
+            <h3>Diagnostiek</h3>
+            <p>We beschikken over geavanceerde diagnostische apparatuur om snel en nauwkeurig problemen met uw voertuig te identificeren. Onze deskundige technici zorgen voor een grondige analyse en bieden passende oplossingen.</p>
+        </div>
+        <div class="service">
+            <h3>Velgen en bandenservice</h3>
+            <p>Of u nu nieuwe banden nodig heeft, uw banden wilt laten balanceren of uw velgen wilt laten repareren, wij bieden een uitgebreide bandenservice om ervoor te zorgen dat uw auto soepel en veilig rijdt.</p>
+        </div>
+    </div>
+<!-- Onder foto's -->
+<div class="flex-container">
+    <div class="flex-item">
+        <img src="Images/Mclarenkapot.jpg">
+    </div>
+    <div class="flex-item">
+        <img src="Images/auotuitlezen.webp">
+    </div>
+    <div class="flex-item">
+        <img src="Images/ferrarimonteur.jpg">
+    </div>
+    </div> 
+    <div class="services-container">
+        <div class="service">
+            <h3>Ruitreparatie en -vervanging</h3>
+            <p>Laat beschadigde autoruiten snel en professioneel repareren of vervangen door onze deskundige technici. We gebruiken hoogwaardige materialen en technieken om uw auto weer veilig de weg op te krijgen.</p>
+        </div>
+        <div class="service">
+            <h3>Interieurreiniging en -herstel</h3>
+            <p>Geef het interieur van uw auto een frisse uitstraling met onze professionele reinigings- en hersteldiensten. We verwijderen vuil, vlekken en geuren, en herstellen beschadigde bekleding om uw auto er als nieuw uit te laten zien en ruiken. Dit alles wordt mogelijk gemaakt door onze partner van Absolute Car Cleaning</p>
+        </div>
+        <div class="service">
+            <h3>Auto tuning</h3>
+            <p>Verbeter de prestaties en het uiterlijk van uw auto met onze tuningdiensten. Van motorafstemming tot carrosserieaanpassingen, we bieden op maat gemaakte oplossingen om uw rijervaring te optimaliseren. Dit alles wordt mogelijk gemaakt door onze partner van Next Level Cars</p>
+        </div>
+    </div>
+<!-- Onder foto's -->
+<div class="flex-container">
+    <div class="flex-item">
+        <img src="Images/ruitvervangen.jpg">
+    </div>
+    <div class="flex-item">
+        <img src="Images/Mansory.avif">
+    </div>
+    <div class="flex-item">
+        <img src="Images/Lambowassen.webp">
+    </div>
+    </div> 
+</section>
+
+<!-- Service Pakketten Sectie -->
+<section class="intro">
+    <div class="service-pakketten">
+        <h2>Onze Service Pakketten</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <h1>Basis Pakket</h1>
+                <p>Inclusief: olieverversing, bandenspanning controle, remcontrole en algemene inspectie.</p>
+                <button class="price-btn">€199</button>
+            </div>
+            <div class="product-card">
+                <h1>Premium Pakket</h1>
+                <p>Inclusief: alle diensten van het Basis Pakket, plus uitlijning, airco-service en interieurreiniging.</p>
+                <button class="price-btn">€399</button>
+            </div>
+            <div class="product-card">
+                <h1>Deluxe Pakket</h1>
+                <p>Inclusief: alle diensten van het Premium Pakket, plus volledige detailing, lakbescherming en auto tuning.</p>
+                <button class="price-btn">€599</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ons Team Sectie -->
+<section class="intro">
+    <div class="container">
+        <h2>Ons service team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="Images/Andrew.webp" alt="Teamlid 1">
+                <h3>Andrew Tate</h3>
+                <p>Hoofdmonteur</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Marco.avif" alt="Teamlid 2">
+                <h3>Marco Borsato</h3>
+                <p>Service manager</p>
+            </div>
+            <div class="team-member">
+                <img src="Images/Royalistiq.jpg" alt="Teamlid 2">
+                <h3>Royalistiq</h3>
+                <p>Diagnostisch specialist</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- recentie Sectie -->
+<section class="intro">
+    <div class="container">
+        <h2>Wat Onze Klanten Zeggen van de service</h2>
+        <div class="recentie">
+            <p>Uitstekende service! Mijn auto rijdt weer als nieuw dankzij het team van Exclusive Cars." </p>
+            <h4>- Klaas</h4>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <div class="recentie">
+            <p>"Professioneel en vriendelijk personeel. Altijd een plezier om hier te komen."</p>
+            <h4>- Maria</h4>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            </div>
+        <div class="recentie">
+                <p>"De beste plek voor luxe autoonderhoud. Sterk aanbevolen!"</p>
+                <h4>- John</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                </div>
+        </div>
+</section>
+
+
+    <!-- FAQ Sectie -->
+    <section class="intro">
+        <div  class="faq">
+            <h2>Veelgestelde Vragen</h2>
+            <div class="faq-item">
+                <h3>Hoe vaak moet ik mijn auto laten onderhouden?</h3>
+                <p>Het is aanbevolen om uw auto minstens één keer per jaar of elke 10.000 km te laten onderhouden, afhankelijk van wat het eerst komt.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Wat zijn de openingstijden van de werkplaats?</h3>
+                <p>Onze werkplaats is geopend van maandag tot en met vrijdag van 08:00 tot 17:00 uur en op zaterdag van 09:00 tot 13:00 uur.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Contactinformatie Sectie -->
+<section class="intro">
+    <div>
+        <h2>Contacteer Ons</h2>
+        <p>Heeft u vragen of wilt u meer informatie? Neem gerust contact met ons op via de onderstaande gegevens.</p>
+        <ul class="contact">
+            <li>Adres: Moeskampweg 17b, 5222 AW Den Bosch</li>
+            <li>Telefoon: (073)6-19280407</li>
+            <li>Email: info@exclusivecars.nl</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div>
+        <div class="footer-links">
+            <a href="voorraad.html">Op voorraad</a>
+            <a href="aanvraag.html">Auto aanvraag</a>
+            <a href="service.html">Service & onderhoud</a>
+            <a href="overons.html">Over ons</a>
+        </div>
+        <img style="width: 10%;" src="Images/Logowit.png" alt="logo">
+    </div>
+  </footer>
+</body>
+</html>

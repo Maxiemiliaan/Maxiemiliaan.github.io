@@ -1,0 +1,134 @@
+<!DOCTYPE html
+<html>
+      <head>
+           <title>Home Exlusive Cars</title>
+           <link rel="stylesheet" href="Exclusive.css">
+     </head>
+<style>
+    body {
+        background-color: rgb(240, 238, 238);
+    }
+
+    .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            height: auto;
+            margin-top: 15%;
+            margin-left: 10%;
+            overflow: hidden;
+            border-radius: 2%;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .active {
+            display: block;
+        }
+        .slideshow-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 16px;
+            text-align: center;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev {
+            left: 0;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+</style>
+
+    <ul>
+        <li><a href="ExclusiveCar.html">Home</a></li>
+        <li><a class="active" href="#">Op voorraad</a></li>
+        <li><a href="#">Auto aanvraag</a></li>
+        <li><a href="#">Service & onderhoud</a></li>
+        <li><a href="#">Over ons</a></li>
+    </ul>
+    <h1 class="text-box2">
+        <img src="Logowit.png" class="Titlefoto2">
+        </h1>
+
+
+
+<div class="text-box">
+    <p><hr class="lijn"></p>
+        <div class="column">
+          <a href="voorraad.html">Alle</a>
+          <a href="Bentley.html" style="color: red">Bentley</a>
+          <a href="Aston.html">Aston Martin</a>
+          <a href="maserati.html">Maserati</a>
+          <a href="mclaren.html">Mclaren </a>
+        </div>
+        <div class="column">
+          <a href="ferrari.html">Ferrari</a>
+          <a href="lambo.html">Lamborghini</a>
+          <a href="Porsche.html">Porsche</a>
+          <a href="Land.html">Land Rover</a>
+          <a href="Rolls.html">Rolls-Royce</a>
+        </div></p>
+
+        <div class="slideshow-container">
+          <div class="slides">
+              <img src="Boxter.avif" style="width:100%">
+              <div class="slideshow-text">Auto Model 1: 300 PK, 0-100 km/u in 4.5 sec, 250 km/u topsnelheid</div>
+          </div>
+      
+          <div class="slides">
+              <img src="Aston DBS.avif" style="width:100%">
+              <div class="slideshow-text">Auto Model 2: 350 PK, 0-100 km/u in 4.0 sec, 280 km/u topsnelheid</div>
+          </div>
+      
+          <div class="slides">
+              <img src="levante3.jpg" style="width:100%">
+              <div class="slideshow-text">Auto Model 3: 400 PK, 0-100 km/u in 3.5 sec, 300 km/u topsnelheid</div>
+          </div>
+      
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+      
+          function plusSlides(n) {
+              showSlides(slideIndex += n);
+          }
+      
+          function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slides");
+              if (n > slides.length) { slideIndex = 1 }
+              if (n < 1) { slideIndex = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              slides[slideIndex - 1].style.display = "block";
+          }
+      </script>
+
+
+        

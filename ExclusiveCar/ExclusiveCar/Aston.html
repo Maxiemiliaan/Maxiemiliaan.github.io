@@ -1,0 +1,181 @@
+<!DOCTYPE html
+<html>
+      <head>
+           <title>Home Exlusive Cars</title>
+           <link rel="stylesheet" href="Exclusive.css">
+     </head>
+<style>
+    body {
+        background-color: rgb(240, 238, 238);
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .slideshow-container {
+        position: relative;
+        justify-content: center;
+        max-width: 90%;
+        margin: 5%;
+        margin-top: 20%;
+    }
+
+    .slide {
+        display: none;
+        position: relative;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 150%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .car-info {
+        position: absolute;
+        top: 5%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        font-size: xx-large;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .car-info2 {
+        position: absolute;
+        top: 90%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust position */
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        font-size: 125%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: 25%;
+        margin-left: 4.95%;
+        margin-right: 5.55%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(255, 0, 0, 0.625);
+    }
+</style>
+
+    <ul>
+        <li><a href="ExclusiveCar.html">Home</a></li>
+        <li><a class="active" href="#">Op voorraad</a></li>
+        <li><a href="#">Auto aanvraag</a></li>
+        <li><a href="#">Service & onderhoud</a></li>
+        <li><a href="#">Over ons</a></li>
+    </ul>
+    <h1 class="text-box2">
+        <img src="Logowit.png" class="Titlefoto2">
+        </h1>
+
+
+
+<div class="text-box">
+    <p><hr class="lijn"></p>
+        <div class="column">
+          <a href="voorraad.html">Alle</a>
+          <a href="Bentley.html">Bentley</a>
+          <a href="Aston.html" style="color: red">Aston Martin</a>
+          <a href="maserati.html">Maserati</a>
+          <a href="mclaren.html">Mclaren </a>
+        </div>
+        <div class="column">
+          <a href="ferrari.html">Ferrari</a>
+          <a href="lambo.html">Lamborghini</a>
+          <a href="Porsche.html">Porsche</a>
+          <a href="Land.html">Land Rover</a>
+          <a href="Rolls.html">Rolls-Royce</a>
+        </div></p>
+
+        <div class="slideshow-container">
+            <div class="slide">
+            <div class="car-info" class="car-model">Car Model 1</div>
+            <img src="Bentley continental GTC S.jpg" alt="Car 1">
+            <div class="car-info2" class="specs">
+                <p>V8 | 305km/h</p>
+            </div>    
+            </div>
+        </div>
+<div class="slideshow-container">
+        <div class="slide">
+            <div class="car-info" class="car-model">Car Model 1</div>
+            <img src="BenS.png" alt="Car 1">
+            <div class="car-info2" class="specs">
+                <p>V8 | 305km/h</p>
+            </div>    
+            </div>
+        </div>
+
+
+<div class="slideshow-container">
+        <div class="slide">
+            <div class="car-info" class="car-model">Flying Spur</div>
+            <img src="Flying Spur s.jpg" alt="Car 1">
+            <div class="car-info2" class="specs">
+                <p>V8 | 305km/h</p>
+            </div>    
+            </div>
+        </div>
+    
+    
+    
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
