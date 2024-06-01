@@ -1,106 +1,65 @@
-<!DOCTYPE html
-<html>
-  <style>
-    /* Styling for the overlay */
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black; /* Black background */
-        z-index: 9999; /* Ensure it's on top of everything */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 1; /* Initially opaque */
-        transition: opacity 1s ease-in-out; /* Transition for fade effect */
-    }
-
-    /* Styling for the logo */
-    .logo {
-        width: 40%; /* Adjust size as needed */
-        height: auto; /* Maintain aspect ratio */
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+  .video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-container {
+    flex: 1;
+    margin-left: 0%; 
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 0; 
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+</style>
 <body>
-
-<div class="overlay" id="overlay">
-    <img src="Logowit.png" alt="Logo" class="logo">
-</div>
-
-
-<script>
-    // Function to fade out the overlay after a delay
-    window.onload = function() {
-        setTimeout(function() {
-            var overlay = document.getElementById('overlay');
-            overlay.style.opacity = 0;
-        }, 2000); // Delay in milliseconds (e.g., 1000ms = 1 seconds)
-    };
-</script>
-      <head>
-           <title>Home Exlusive Cars</title>
-           <link rel="stylesheet" href="Exclusive.css">
-     </head>
-    
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="voorraad.html">Op Voorraad</a></li>
-        <li><a href="#contact">Auto aanvraag</a></li>
-        <li><a href="#about">Service & onderhoud</a></li>
-        <li><a href="#about">Over ons</a></li>
-        <div class="search-container">
-      </ul>
-  <hr>
-        <h1 class="Title">
-        <img src="Logowit.png" class="Titlefoto">
-        </h1>
- 
-        <div class="image-box">
-          <p class="Tekst">Exclusive Cars biedt onderandere de volgende merken aan:</p>
-          <a href="voorraad.html"><img src="Logo.png"></a>
-        </div> 
-        
-          
-    <div class="flex-container">
-      <div class="flex-item">
-          <img src="Porschewit.jpg">
-          <a class="link" href="voorraad.html">Bekijk de voorraad</a>
-      </div>
-      <div class="flex-item">
-          <img src="lambocircuit.jpg">
-          <a class="link" href="voorraad.html">Bekijk de voorraad</a>
-      </div>
-      <div class="flex-item">
-          <img src="ferrariwit.webp">
-          <a class="link" href="voorraad.html">Bekijk de voorraad</a>
-      </div>
-    </div> 
-<div class="flex-container2">
-  <div class="flex-item2">
-      <img src="bentleyrace.webp">
-      <a class="link" href="voorraad.html">Bekijk de voorraad</a>
-  </div>
-  <div class="flex-item2">
-      <img src="AstonMartinCircuit.jpg">
-      <a class="link" href="voorraad.html">Bekijk de voorraad</a>
-  </div>
-</div>
-
-        <div>
-          <iframe src="https://www.youtube.com/embed/DZAdVY9kKbc?end=48&vq=hd1080&rel=0"
-           width="100%" height="750" title="A drive like no other – the Porsche 911 GT3" frameborder="0" allowfullscreen>
-          </iframe>
+    <section class="video-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/DZAdVY9kKbc?end=48&vq=hd1080&rel=0"
+                    width="100%" height="750" title="A drive like no other – the Porsche 911 GT3" frameborder="0" allowfullscreen>
+            </iframe>
         </div>
-  <hr>
+        <div class="text-container">
+            <h2>Discover the Porsche 911 GT3</h2>
+            <p>Experience the thrill of driving the Porsche 911 GT3. Watch the video to see its stunning performance and precision engineering in action.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>
 
-  <div class="footer">
-    <p><img src="Logowit.png"></p>
-  </div>
-     </Body>
-
-     
-
-  

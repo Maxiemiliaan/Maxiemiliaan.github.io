@@ -8,71 +8,181 @@
     body {
         background-color: white;
     }
+ 
+
 </style>
 
-<ul>
-    <li><a href="ExclusiveCar.html">Home</a></li>
-    <li><a class="active" href="#contact">Op voorraad</a></li>
-    <li><a href="#contact">Auto aanvraag</a></li>
-    <li><a href="#about">Service & onderhoud</a></li>
-    <li><a href="#about">Over ons</a></li>
-    <div class="search-container">
-</ul>
-<h1 class="text-box2">
-    <img src="Logowit.png" class="Titlefoto2">
-    </h1>
+<!-- Navbar -->
+<div class="navbar3">
+    <ul>
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="voorraad.html" class="navbar-link">Op voorraad</a></li>
+        <li><a href="lease.html" class="navbar-link">Lease & verzekeren</a></li>
+        <li><a href="service.html" class="navbar-link">Service & onderhoud</a></li>
+        <li><a href="overons.html" class="navbar-link">Over ons</a></li>
+        <li class="contact"><a href="contact.html" class="navbar-link">Contact</a></li>
+    </ul>
+</div>
 
-<div class="text-box">
-    <p><hr class="lijn"></p>
-        <div class="column">
-          <a href="voorraad.html">Alle</a>
-          <a href="Bentley.html">Bentley</a>
-          <a href="Aston.html" style="color: red">Aston Martin</a>
-          <a href="maserati.html">Maserati</a>
-          <a href="mclaren.html">Mclaren </a>
-          <a href="ferrari.html">Ferrari</a>
-          <a href="lambo.html">Lamborghini</a>
+<div class="image-container">
+<img class="img" src="Images/Porschetext.png">
+</div>
+
+<!-- slideshow voor auto modellen -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="text top-text">911 Turbo S</div>
+            <div class="text prijs-text">€233.978</div>
+            <div class="container">
+            <img class="image" src="Images/turbo s.png">
+            <div class="spec-container">
+                <div class="spec-box">
+                    <h3>478 kW/650 pk</h3>
+                    <p>Vermogen (kW)/Vermogen (pk)</p>
+                </div>
+                <div class="spec-box">
+                    <h3>2.7s</h3>
+                    <p>Acceleratie van 0-100 km/h</p>
+                </div>
+                <div class="spec-box">
+                    <h3>330 km/h</h3>
+                    <p>Topsnelheid</p>
+                </div>
+            </div>
         </div>
-        <div class="column">
-          <a href="#">Porsche</a>
-          <a href="#">Land Rover</a>
-          <a href="#">Mercedes-Benz</a>
-          <a href="#">Rolls-Royce</a>
-          <a href="#">BMW</a>
-          <a href="#">Audi</a>
-        </div></p>
+    </div>
+    <div class="mySlides fade">
+        <div class="text top-text">718 Cayman S</div>
+        <div class="text prijs-text">€93.972</div>
+        <div class="container">
+        <img class="image" src="Images/CaymanS.png">
+        <div class="spec-container">
+            <div class="spec-box">
+                <h3>257 kW/350 pk</h3>
+                <p>Vermogen (kW)/Vermogen (pk)</p>
+            </div>
+            <div class="spec-box">
+                <h3>4.4s</h3>
+                <p>Acceleratie van 0-100 km/h</p>
+            </div>
+            <div class="spec-box">
+                <h3>285 km/h</h3>
+                <p>Topsnelheid</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="text top-text">718 Boxter</div>
+    <div class="text prijs-text">€82.870</div>
+    <div class="container">
+    <img class="image" src="Images/Boxter.png">
+    <div class="spec-container">
+        <div class="spec-box">
+            <h3>220 kW/300 pk</h3>
+            <p>Vermogen (kW)/Vermogen (pk)</p>
+        </div>
+        <div class="spec-box">
+            <h3>4.9s</h3>
+            <p>Acceleratie van 0-100 km/h</p>
+        </div>
+        <div class="spec-box">
+            <h3>275 km/h</h3>
+            <p>Topsnelheid</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="mySlides fade">
+    <div class="text top-text">Cayenne E-Hybrid Coupé</div>
+    <div class="text prijs-text">€162.500</div>
+    <div class="container">
+    <img class="image" src="Images/coupe.png">
+    <div class="spec-container">
+        <div class="spec-box">
+            <h3>364 kW/470 pk</h3>
+            <p>Vermogen (kW)/Vermogen (pk)</p>
+        </div>
+        <div class="spec-box">
+            <h3>4.9s</h3>
+            <p>Acceleratie van 0-100 km/h</p>
+        </div>
+        <div class="spec-box">
+            <h3>254 km/h</h3>
+            <p>Topsnelheid</p>
+        </div>
+    </div>
+</div>
+</div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+<!-- Javascript voor slideshow -->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
     
-<h1  class="Merk"><a class="Merk">Aston Martin</a></h1> 
-        <div class="product-container">
-            <div class="product-card">
-                <img src="ferrariwit.webp" alt="Product Image">
-                    <div class="product-info">
-                        <h2>*</h2>
-                        <p>*</p>
-                    </div>
-               </div>
-        <div class="product-card">
-                <img src="ferrariwit.webp" alt="Product Image">
-                    <div class="product-info">
-                        <h2>*</h2>
-                        <p>*</p>
-                    </div>
-                </div>
-        </div>
-        
-        <div class="product-container2">
-            <div class="product-card2">
-                <img src="ferrariwit.webp" alt="Product Image">
-                    <div class="product-info">
-                        <h2>*</h2>
-                        <p>*</p>
-                    </div>
-               </div>
-        <div class="product-card2">
-                <img src="ferrariwit.webp" alt="Product Image">
-                    <div class="product-info">
-                        <h2>*</h2>
-                        <p>*</p>
-                    </div>
-                </div>
-        </div>
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active2");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].classList.add("active2");
+    }
+</script>
+
+<!-- Link voor een proefrit -->
+<section>
+<h3 class="model-tekst">Geïnterreseerd in één van deze modellen?</h3>
+<div class="link-container">
+    <a href="proefrit.html" class="link2">
+        <span class="pijl">&#10095;</span> Boek een proefrit
+    </a>
+    <a href="contact.html" class="link2">
+        <span class="pijl">&#10095;</span> Stuur ons een bericht
+    </a>
+</div>
+</section>
+
+<!-- Navbar voor naar andere modellen -->
+<section>
+<h3 class="model-tekst">Bekijk ook de andere modellen</h3>
+<div class="navbar3">
+    <ul>
+        <li><a href="index.html" class="navbar-link">Bentley</a></li>
+        <li><a href="voorraad.html" class="navbar-link">Aston Martin</a></li>
+        <li><a href="lease.html" class="navbar-link">Maserati</a></li>
+        <li><a href="service.html" class="navbar-link">Mclaren</a></li>
+        <li><a href="overons.html" class="navbar-link">Ferrari</a></li>
+        <li><a href="contact.html" class="navbar-link">Lamborghini</a></li>
+        <li><a href="contact.html" class="navbar-link">Porsche</a></li>
+        <li><a href="contact.html" class="navbar-link">Land Rover</a></li>
+        <li><a href="contact.html" class="navbar-link">Porsche</a></li>
+    </ul>
+</div>
+</section>
+</body>
+</html>
