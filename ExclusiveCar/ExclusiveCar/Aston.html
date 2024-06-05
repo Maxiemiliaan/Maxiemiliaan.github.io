@@ -1,181 +1,260 @@
-<!DOCTYPE html
-<html>
+<!DOCTYPE html>
+<html lang="nl">
       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
            <title>Home Exlusive Cars</title>
            <link rel="stylesheet" href="Exclusive.css">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      </head>
 <style>
     body {
-        background-color: rgb(240, 238, 238);
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    .slideshow-container {
-        position: relative;
-        justify-content: center;
-        max-width: 90%;
-        margin: 5%;
-        margin-top: 20%;
-    }
-
-    .slide {
-        display: none;
-        position: relative;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 150%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .car-info {
-        position: absolute;
-        top: 5%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0);
-        color: white;
-        font-size: xx-large;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .car-info2 {
-        position: absolute;
-        top: 90%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust position */
-        background-color: rgba(0, 0, 0, 0);
-        color: white;
-        font-size: 125%;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        margin-top: 25%;
-        margin-left: 4.95%;
-        margin-right: 5.55%;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: rgba(255, 0, 0, 0.625);
+        background-color: white;
     }
 </style>
-
+<body>
+<!-- Navbar -->
+<div class="navbar3">
     <ul>
-        <li><a href="ExclusiveCar.html">Home</a></li>
-        <li><a class="active" href="#">Op voorraad</a></li>
-        <li><a href="#">Auto aanvraag</a></li>
-        <li><a href="#">Service & onderhoud</a></li>
-        <li><a href="#">Over ons</a></li>
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="voorraad.html" class="navbar-link">Op voorraad</a></li>
+        <li><a href="verzekering.html" class="navbar-link">Verzekeren</a></li>
+        <li><a href="service.html" class="navbar-link">Service & onderhoud</a></li>
+        <li><a href="overons.html" class="navbar-link">Over ons</a></li>
+        <li class="contact"><a href="contact.html" class="navbar-link">Contact</a></li>
     </ul>
-    <h1 class="text-box2">
-        <img src="Logowit.png" class="Titlefoto2">
-        </h1>
+</div>
 
+<!-- Porsche text logo -->
+<div class="image-container">
+<img class="img" src="Images/Porschetext.png">
+</div>
 
-
-<div class="text-box">
-    <p><hr class="lijn"></p>
-        <div class="column">
-          <a href="voorraad.html">Alle</a>
-          <a href="Bentley.html">Bentley</a>
-          <a href="Aston.html" style="color: red">Aston Martin</a>
-          <a href="maserati.html">Maserati</a>
-          <a href="mclaren.html">Mclaren </a>
-        </div>
-        <div class="column">
-          <a href="ferrari.html">Ferrari</a>
-          <a href="lambo.html">Lamborghini</a>
-          <a href="Porsche.html">Porsche</a>
-          <a href="Land.html">Land Rover</a>
-          <a href="Rolls.html">Rolls-Royce</a>
-        </div></p>
-
-        <div class="slideshow-container">
-            <div class="slide">
-            <div class="car-info" class="car-model">Car Model 1</div>
-            <img src="Bentley continental GTC S.jpg" alt="Car 1">
-            <div class="car-info2" class="specs">
-                <p>V8 | 305km/h</p>
-            </div>    
+<!-- slideshow voor auto modellen -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="text top-text">911 Turbo S</div>
+            <div class="text prijs-text">€233.978</div>
+            <div class="container">
+            <img class="image" src="Images/turbo s.png">
+            <div class="spec-container">
+                <div class="spec-box">
+                    <h3>478 kW/650 pk</h3>
+                    <p>Vermogen (kW)/Vermogen (pk)</p>
+                </div>
+                <div class="spec-box">
+                    <h3>2.7s</h3>
+                    <p>Acceleratie van 0-100 km/h</p>
+                </div>
+                <div class="spec-box">
+                    <h3>330 km/h</h3>
+                    <p>Topsnelheid</p>
+                </div>
             </div>
         </div>
-<div class="slideshow-container">
-        <div class="slide">
-            <div class="car-info" class="car-model">Car Model 1</div>
-            <img src="BenS.png" alt="Car 1">
-            <div class="car-info2" class="specs">
-                <p>V8 | 305km/h</p>
-            </div>    
-            </div>
-        </div>
-
-
-<div class="slideshow-container">
-        <div class="slide">
-            <div class="car-info" class="car-model">Flying Spur</div>
-            <img src="Flying Spur s.jpg" alt="Car 1">
-            <div class="car-info2" class="specs">
-                <p>V8 | 305km/h</p>
-            </div>    
-            </div>
-        </div>
-    
-    
-    
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
+    <div class="mySlides fade">
+        <div class="text top-text">718 Cayman S</div>
+        <div class="text prijs-text">€93.972</div>
+        <div class="container">
+        <img class="image" src="Images/CaymanS.png">
+        <div class="spec-container">
+            <div class="spec-box">
+                <h3>257 kW/350 pk</h3>
+                <p>Vermogen (kW)/Vermogen (pk)</p>
+            </div>
+            <div class="spec-box">
+                <h3>4.4s</h3>
+                <p>Acceleratie van 0-100 km/h</p>
+            </div>
+            <div class="spec-box">
+                <h3>285 km/h</h3>
+                <p>Topsnelheid</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mySlides fade">
+    <div class="text top-text">718 Boxter</div>
+    <div class="text prijs-text">€82.870</div>
+    <div class="container">
+    <img class="image" src="Images/Boxter.png">
+    <div class="spec-container">
+        <div class="spec-box">
+            <h3>220 kW/300 pk</h3>
+            <p>Vermogen (kW)/Vermogen (pk)</p>
+        </div>
+        <div class="spec-box">
+            <h3>4.9s</h3>
+            <p>Acceleratie van 0-100 km/h</p>
+        </div>
+        <div class="spec-box">
+            <h3>275 km/h</h3>
+            <p>Topsnelheid</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="mySlides fade">
+    <div class="text top-text">Cayenne E-Hybrid Coupé</div>
+    <div class="text prijs-text">€162.500</div>
+    <div class="container">
+    <img class="image" src="Images/coupe.png">
+    <div class="spec-container">
+        <div class="spec-box">
+            <h3>364 kW/470 pk</h3>
+            <p>Vermogen (kW)/Vermogen (pk)</p>
+        </div>
+        <div class="spec-box">
+            <h3>4.9s</h3>
+            <p>Acceleratie van 0-100 km/h</p>
+        </div>
+        <div class="spec-box">
+            <h3>254 km/h</h3>
+            <p>Topsnelheid</p>
+        </div>
+    </div>
+</div>
+</div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+<!-- Javascript voor slideshow -->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
     
-        function changeSlide(n) {
-            showSlides(slideIndex += n);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
         }
-    
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active2");
         }
-    
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
-    
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].classList.add("active2");
+    }
+</script>
+
+<!-- Link voor een proefrit -->
+<section>
+<h3 class="model-tekst">Geïnterreseerd in één van deze modellen?</h3>
+<div class="link-container">
+    <a href="proefrit.html" class="link2">
+        <span class="pijl">&#10095;</span> Boek een proefrit
+    </a>
+    <a href="contact.html" class="link2">
+        <span class="pijl">&#10095;</span> Stuur ons een bericht
+    </a>
+</div>
+</section>
+
+<!-- Navbar voor naar andere modellen -->
+<section>
+<h3 class="model-tekst">Bekijk ook de andere modellen</h3>
+<div class="navbar3">
+    <ul>
+        <li><a href="Aston.html" class="navbar-link">Bentley</a></li>
+        <li><a href="Aston.html" class="navbar-link">Aston Martin</a></li>
+        <li><a href="Aston.html" class="navbar-link">Maserati</a></li>
+        <li><a href="Aston.html" class="navbar-link">Mclaren</a></li>
+        <li><a href="Aston.html" class="navbar-link">Ferrari</a></li>
+        <li><a href="Aston.html" class="navbar-link">Lamborghini</a></li>
+        <li><a href="Aston.html" class="navbar-link">Porsche</a></li>
+        <li><a href="Aston.html" class="navbar-link">Land Rover</a></li>
+        <li><a href="Aston.html" class="navbar-link">Porsche</a></li>
+    </ul>
+</div>
+</section>
+
+<!-- Contactinformatie Sectie -->
+<section class="intro">
+    <div class="contact-container">
+        <h2>Contacteer Ons</h2>
+        <p>Heeft u vragen of wilt u meer informatie? Neem gerust contact met ons op via de onderstaande gegevens.</p>
+        <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Adres: Moeskampweg 17b, 5222 AW Den Bosch</li>
+            <li><i class="fas fa-phone"></i> Telefoon: (073)6-19280407</li>
+            <li><i class="fas fa-envelope"></i> Email: info@exclusivecars.nl</li>
+        </ul>
+        <a href="contact.html" class="contact-btn">Contact ons</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-sections">
+            <!-- Pagina's -->
+            <div class="footer-section">
+                <h3>Pagina's</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="voorraad.html">Op Voorraad</a></li>
+                    <li><a href="verzekering.html">Verzekeren</a></li>
+                    <li><a href="service.html">Service & Onderhoud</a></li>
+                    <li><a href="overons.html">Over Ons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Automerken -->
+            <div class="footer-section">
+                <h3>Merken</h3>
+                <ul>
+                    <li><a href="voorraad.html#Porsche">Porsche</a></li>
+                    <li><a href="voorraad.html#Lambo">Lamborghini</a></li>
+                    <li><a href="voorraad.html#Ferrari">Ferrari</a></li>
+                    <li><a href="voorraad.html#Bentley">Bentley</a></li>
+                    <li><a href="voorraad.html#Aston">Aston Martin</a></li>
+                    <li><a href="voorraad.html#Mase">Maserati</a></li>
+                </ul>
+            </div>
+            <!-- Overige -->
+            <div class="footer-section">
+                <h3>Overige</h3>
+                <ul>
+                    <li><a href="service.html#FAQ">FAQ</a></li>
+                    <li><a href="overons.html#team">Ons team</a></li>
+                    <li><a href="service.html#serviceteam">Ons service team</a></li>
+                    <li><a href="overons.html#partners">Partners</a></li>
+                    <li><a href="proefrit.html">Proefrit</a></li>
+                </ul>
+            </div>
+            <!-- Volg ons -->
+            <div class="footer-section">
+                <h3>Volg ons</h3>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram icon"></i></a></li>
+                </ul> 
+            </div>
+        </div>
+        <div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Exclusive Cars. Alle rechten voorbehouden.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
