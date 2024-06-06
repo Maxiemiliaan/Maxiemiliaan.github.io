@@ -53,7 +53,7 @@ transition: 0.3s;
   transition: color 0.3s ease;
 }
 
-/*Logo over de foto van de intro foto's*/
+/* logo op de intro foto, zodat ie wat kleiner is */
 .titlefoto {
   margin-top: 0%;
   width: 60%;
@@ -152,7 +152,7 @@ html {
     transition: width 0.3s ease, background-color 0.3s ease;
   }
   
-  /* voor als je hovered op een navbar link (alle navbars */
+  /* voor als je hovered op een navbar link (alle navbars) */
   .navbar-link:hover::after,
   .navbar-link.active::after {
     width: 100%;
@@ -192,7 +192,7 @@ html {
   font-size: 100%;
 }
 
-/*Zorgt voor contactlink op de navbar rechts ook voor andere navbars*/
+/*Zorgt voor contactlink op de navbar rechts ook voor alle navbars*/
 .navbar3 ul li.contact,
 .navbar2 ul li.contact,
 .navbar ul li.contact {
@@ -249,6 +249,7 @@ html {
   background-color: red;
 }
 
+/* voor de twee auto's van Bentley op de voorraad pagina, zodat ze half in het zwart staan */
 .product-box {
   background-color: #333; 
   padding: 20px;
@@ -282,44 +283,7 @@ html {
   line-height: 3;
 }
 
-/*auto merken voorraad pagina's*/
-.column {
-  float: left;
-  width: 10%;
-  padding: 0px;
-  margin-left: 15%;
-  background-color: #333;
-  height: 100px;
-}
-
-/* Deze column is voor alle merken pagina's, dus bijvoorbeeld Aston.html */
-.column2 {
-  float: left;
-  width: 10%;
-  padding: 0px;
-  margin-left: 5%;
-  background-color: #333;
-  height: 100px;
-}
-
-
-.column a,
-.column2 a {
-  float: none;
-  color: lightgrey;
-  padding: 0px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.column a:hover,
-.column2 a:hover {
-  color: red;
-  transition-duration: 0.3s;
-}
-
-/*Producten op voorraad pagina's*/
+/* auto producten op voorraad pagina's*/
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -388,7 +352,7 @@ transition: 0.3s;
   display: block;
 }
 
-/* Deze link container is voor alle product-cards op voorraad pagina */
+/* Deze link container is voor alle product-cards op voorraad pagina. zorgt ervoor dat er twee links in de product-container kunnen staan */
 .link-container2{
   display: flex;
   justify-content: center;
@@ -414,7 +378,7 @@ color: red;
 transition: 0.3s;
 }
 
-/* voor het merk Bentley op voorraad pagina*/
+/* voor het merk Bentley op voorraad pagina zodat het letterype zwart is*/
 .Merk {
   text-align: center;
   margin-top: -15%;
@@ -422,7 +386,7 @@ transition: 0.3s;
   text-decoration: none ;
 }
 
-/* Merk 2 en 3 zijn voor de resterende merken en automodellen op de voorraad pagina*/
+/* Merk 2 is voor de resterende merken en automodellen op de voorraad pagina*/
 .Merk2 {
   text-align: center;
   margin-top: 3%;
@@ -430,6 +394,7 @@ transition: 0.3s;
   text-decoration: none;
 }
 
+/* merk 3 is voor alle modellen namen van de auto's in de product-container op de voorraad pagina */
 .Merk3 {
   margin-top: 3%;
   color: black;
@@ -463,7 +428,7 @@ height: 100vh;
 position: relative;
 }
 
-/* Titel foto contact pagina */
+/* Titel foto contact, proefrit en bevestigings pagina */
 .titel-image4 {
   background-image: url('Images/MC20Contact.jpg'); 
   background-size: cover;
@@ -472,7 +437,7 @@ position: relative;
   position: relative;
   }
 
-/*voor de tekst die op de foto's staan bij de intro van pagina's*/
+/*voor de tekst die op de foto's staan bij de introfoto van pagina's*/
 .titel-text {
 position: absolute;
 top: 50%;
@@ -491,7 +456,7 @@ margin: 0;
 font-size: 1.5em;
 }
 
-/*voor de styling van de secties op de pagina's index, service, overons en contact */
+/*voor de styling van de secties op de pagina's index, service, overons, contact en verzekering*/
 .intro {
 background-color: #f0f0f0;
 padding: 40px 0;
@@ -509,7 +474,7 @@ line-height: 1.6;
 }
 
 /* styling voor de foto collage op hoofdpagina */
-/* 'merken-hoofd' is voor de achtergrond kleur van de flex-containers op de hoofdpagina */
+/* 'merken-hoofd' is voor de achtergrond kleur van de sectie flex-containers op de hoofdpagina */
 .merken-hoofd {
   background-color: #f0f0f0;
   padding: 40px 0;
@@ -557,7 +522,7 @@ line-height: 1.6;
   transition: 0.3s;
 }
 
-/* foto die de volledige breedte van het scherm inneemt met een rode overlay */
+/* foto die de volledige breedte van het scherm inneemt met een rode overlay op hoofdpagina en verzkering */
 .volledige-breedte-foto {
   position: relative;
   width: 100%;
@@ -575,6 +540,7 @@ line-height: 1.6;
   height: auto; 
 }
 
+/* zorgt voor de rode overlay van de foto */
 .rode-overlay {
   position: absolute; 
   top: 0; 
@@ -584,7 +550,7 @@ line-height: 1.6;
   background-color: rgba(255, 0, 0, 0.133); 
 }
 
-/* verticale lijn voor boven een stukje tekst hoofdpagina */
+/* verticale lijn voor boven een stukje tekst */
 .verticale-lijn {
   width: 2px;
   height: 50px; 
@@ -592,7 +558,7 @@ line-height: 1.6;
   margin: 0 auto 7px auto;
 }
 
-/* styles voor de tekst die in de rode foto's staan */
+/* styles voor de tekst die in de rode overlay foto's staan */
 .overlay-tekst {
   position: absolute; 
   top: 25%;  
@@ -608,7 +574,6 @@ line-height: 1.6;
   font-size: 300%; 
   margin-bottom: 10px; 
 }
-
 
 .overlay-tekst p {
   font-size: 100%; 
@@ -643,7 +608,7 @@ line-height: 1.6;
   font-size: 125%;
 }
 
-/* over ons en geschiedenis sectie */
+/* over ons en geschiedenis sectie overons pagina */
 .geschiedenis,
 .overons {
 font-size: 18px;
@@ -684,7 +649,7 @@ font-size: 18px;
 line-height: 1.6;
 }
 
-/* foto naast missie */
+/* foto naast missie op overons pagina */
 .foto-box {
 position: absolute;
 border: 0px solid #ccc;
@@ -702,7 +667,7 @@ display: block;
 margin: 0 auto;
 }
 
-/* foto naast visie */
+/* foto naast visie op overons pagina */
 .foto-box2 {
 position: absolute;
 border: 0px solid #ccc;
@@ -720,7 +685,7 @@ display: block;
 margin: 0 auto;
 }
 
-/* Ons Team sectie */
+/* Ons Team sectie op overons en service pagina */
 .team-members {
 display: flex;
 justify-content: center;
@@ -840,6 +805,7 @@ margin: 1%;
   color: black
 }
 
+/* knop voor de contactinformatie en op de contact/proefrit pagina */
 .contact-btn {
   display: inline-block;
   background-color: #333;
@@ -971,12 +937,13 @@ background-color: #555;
 /* verzkeringen pagina styles zorgen voor de 3 flex-containers naast elkaar met een pop-up melding */
 .flex-container2 {
   display: flex;
+  background-color: white;
 }
 
 .box {
   flex: 1;
   position: relative;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   margin: 10px;
   padding: 80px;
   text-align: center;
@@ -1111,11 +1078,13 @@ background-color: #555;
   font-weight: bold;
 }
 
+/* voor de type model op aston pagina */
 .top-text {
   font-size: 300%;
   top: 3%;
 }
 
+/* prijs van de auto */
 .prijs-text {
   font-size: 125%;
   top: 11%;
@@ -1148,7 +1117,7 @@ background-color: #555;
   text-align: center; 
 }
 
-/* styles voor contact en proefrit pagina */
+/* styles voor contact en proefrit pagina, invoerformulier */
 .contact-form {
   text-align: left;
   margin: 0 auto;
@@ -1171,22 +1140,6 @@ background-color: #555;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
-}
-
-.contact-form button {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  width: 30%;
-  margin-bottom: 3%;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: red;
 }
 
 /* Footer voor op alle pagina's */
@@ -1266,6 +1219,7 @@ background-color: #555;
   transition: color 0.3s;
 }
 
+/* grootte van de social media logo's */
 .icon {
   font-size: 200%;
 }
